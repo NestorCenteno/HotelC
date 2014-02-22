@@ -1,9 +1,11 @@
 function enviarDatos(nom,mail,tel,foto){
+    alert(1);
     $.ajax({
         type: "POST",
         url: "http://igitsoft.com/pgtest.php",
         data: "nom=" + nom + "&mail="+ mail +"&tel="+tel
     }).done(function(msg){
+        alert("msg="+msg);
         if(msg==1){
             subirFoto(foto, nom);
         }else{

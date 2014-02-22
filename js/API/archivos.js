@@ -1,4 +1,5 @@
 function subirFoto(foto, nom){
+    alert(2);
     var options = new FileUploadOptions();
     options.fileKey="archivo";
     options.fileName="foto01-Carlos";
