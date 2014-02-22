@@ -2,7 +2,7 @@ function subirFoto(foto, nom){
     alert(2);
     var options = new FileUploadOptions();
     options.fileKey="archivo";
-    options.fileName="foto01-Carlos";
+    options.fileName="foto01-Nestor";
     options.mimeType="image/jpeg";
 
     var params = {};
@@ -13,7 +13,8 @@ function subirFoto(foto, nom){
     options.params = params;
 
     var ft = new FileTransfer();
-    ft.upload(foto, "http://igitsoft.com/pgtest.php", function(r){
+    ft.upload(foto, "http://192.168.1.65/hotelc/pgtest.php", function(r){
+        alert(r.response);
         if(r.response == 1){
             nagator.notification.confirm("Registro Realizado Satisfactoriamente", function(btn){
                 switch(btn){

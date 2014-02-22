@@ -2,7 +2,7 @@ function enviarDatos(nom,mail,tel,foto){
     alert(1);
     $.ajax({
         type: "POST",
-        url: "http://igitsoft.com/pgtest.php",
+        url: "http://192.168.1.65/hotelc/pgtest.php",
         data: "nom=" + nom + "&mail="+ mail +"&tel="+tel
     }).done(function(msg){
         alert("msg="+msg);
@@ -17,7 +17,7 @@ function enviarDatos(nom,mail,tel,foto){
 function sicronizarReserva(th,pe,di,ha){
     $.ajax({
         type: "POST",
-        url: "http://igitsoft.com/pgtest.php",
+        url: "http://192.168.1.65/hotelc/pgtest.php",
         data: "th=" + th + "&pe="+ pe +"&di="+ di + "&ha="+ ha + "&id="+infoDispositivo('id')
     }).done(function(msg){
         if(msg==1){
