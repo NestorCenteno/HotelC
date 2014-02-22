@@ -42,9 +42,10 @@ $(function(){
             /*comprobar conexion*/
             if(estaConectado()){
                 //enviar al servidor
+                sicronizarReserva(th,per,dia,hab)
             }
             else{
-             crearReserva(th,per,dia,hab);
+                crearReserva(th,per,dia,hab);
             }
                 
         });
