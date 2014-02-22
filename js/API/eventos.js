@@ -5,6 +5,7 @@ $(function(){
             window.location.href = "#registro";
         
         $('#regEnv').tap(function(){
+            alert("dentro de captura form");
             var nom = $('#regNom').val();
             var mail = $('#regMail').val();
             var tel = $('#regTel').val();
@@ -42,7 +43,7 @@ $(function(){
             /*comprobar conexion*/
             if(estaConectado()){
                 //enviar al servidor
-                sicronizarReserva(th,per,dia,hab)
+                sicronizarReserva(th,per,dia,hab);
             }
             else{
                 crearReserva(th,per,dia,hab);

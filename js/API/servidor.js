@@ -1,5 +1,5 @@
 function enviarDatos(nom,mail,tel,foto){
-    alert(1);
+    alert("dentro de enviar datos");
     $.ajax({
         type: "POST",
         url: "http://192.168.1.65/hotelc/pgtest.php",
